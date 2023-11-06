@@ -42,7 +42,8 @@ public class UIManager : MonoBehaviour
     public void StartGame()
     {
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.InGame);
-        SceneManager.LoadScene(gameSceneName);
+       // SceneManager.LoadScene(gameSceneName);
+        mainMenu.SetActive(false);
 
     }
 
@@ -54,7 +55,7 @@ public class UIManager : MonoBehaviour
     public void PauseGame()
     {
         // Use GameStateManager instead of isGamePaused
-        if (GameStateManager.Instance.currentGameState == GameStateManager.GameState.InGame)
+        if (GameStateManager.Instance.currentGameState == GameStateManager.GameState.MainMenu)
         {
             GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Paused);
             pauseMenu.SetActive(true);
@@ -73,7 +74,8 @@ public class UIManager : MonoBehaviour
         // Use GameStateManager instead of isGamePaused
         if (GameStateManager.Instance.currentGameState == GameStateManager.GameState.Paused)
         {
-            GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.InGame);
+           // GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.InGame);
+            GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.MainMenu);
             pauseMenu.SetActive(false);
 
         }
