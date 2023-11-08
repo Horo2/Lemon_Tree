@@ -14,7 +14,7 @@ public class Menu : MonoBehaviour
 
     void Start()
     {
-        m_Menu.SetActive(true);
+        
     }
 
     void Update()
@@ -22,19 +22,13 @@ public class Menu : MonoBehaviour
         if(showButton.action.WasPerformedThisFrame())
         {
             m_Menu.SetActive(!m_Menu.activeSelf);
+            m_Menu.transform.position = playerHead.position + new Vector3(playerHead.forward.x, 0 , playerHead.forward.z);
         }
 
-        // If menu is active, position it in front of the player.
-        if(m_Menu.activeSelf)
-        {
-            // Calculate the desired position.
-            Vector3 adjustedForward = new Vector3(playerHead.forward.x, 0, playerHead.forward.z).normalized;
-            m_Menu.transform.position = playerHead.position + adjustedForward * spawnDistance;
-
-            // Make the menu face the player.
+  
             m_Menu.transform.LookAt(new Vector3(playerHead.position.x, m_Menu.transform.position.y, playerHead.position.z));
+            
             m_Menu.transform.forward*=-1;
-        }
     }
 
     public void Resume()
