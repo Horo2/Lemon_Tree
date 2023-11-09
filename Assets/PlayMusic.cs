@@ -14,7 +14,8 @@ public class PlayMusic : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-
+        audioSource.clip = musicTracks[musicTracks.FindIndex(track => track.name == "0-0-0-0-0")];
+        audioSource.Play();
         // Initialize the socketFilledStates list with all sockets initially unfilled
         socketFilledStates = new List<bool>(new bool[socketContainers.Count]);
     }
