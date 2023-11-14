@@ -3100,6 +3100,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1458893959}
+  - component: {fileID: 1458893961}
+  - component: {fileID: 1458893960}
   m_Layer: 0
   m_Name: Trans_spot (1)
   m_TagString: Untagged
@@ -3122,6 +3124,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969180462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1458893960
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458893958}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.563715, y: 7.6349025, z: 4.377546}
+  m_Center: {x: 0.23587309, y: 3.3174515, z: 0.8725081}
+--- !u!114 &1458893961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458893958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc92206cfbaea84c96a6e36fb8bd9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Cave-2
 --- !u!1001 &1461905103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4677,6 +4713,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2053774135}
+  - component: {fileID: 2053774137}
+  - component: {fileID: 2053774136}
   m_Layer: 0
   m_Name: Trans_spot
   m_TagString: Untagged
@@ -4699,6 +4737,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1880828745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2053774136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053774134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.5846734, y: 8.706154, z: 5.562028}
+  m_Center: {x: 0.06998343, y: 3.8530638, z: 1.0118773}
+--- !u!114 &2053774137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053774134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc92206cfbaea84c96a6e36fb8bd9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Cave-1
 --- !u!1001 &2101032680
 PrefabInstance:
   m_ObjectHideFlags: 0
