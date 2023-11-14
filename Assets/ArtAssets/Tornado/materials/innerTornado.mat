@@ -127,7 +127,7 @@ Material:
     - _WobbleStrength: 0.2
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _dissolve: 0.398
+    - _dissolve: 0.361
     - _noiseScale: 4
     - _noiseSpeed: 1
     - _noiseStrength: 0.8
