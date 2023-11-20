@@ -10,6 +10,7 @@ public class PlayMusic : MonoBehaviour
     public List<AudioClip> musicTracks; // List of music tracks to play based on the state
 
     private AudioSource audioSource;
+    public PrefabSpawn prefabSpawn;
 
     private void Start()
     {
@@ -54,6 +55,14 @@ public class PlayMusic : MonoBehaviour
         {
             audioSource.clip = musicTracks[index];
             audioSource.Play();
+        }
+        
+        if(stateKey == "1-1-1-1-1")
+        {
+             if(prefabSpawn != null)
+            {
+                prefabSpawn.PrefabSpawnCode();
+            }
         }
     }
 }
