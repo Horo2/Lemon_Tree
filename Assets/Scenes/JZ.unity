@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.102966584, g: 0.058279343, b: 0.02994424, a: 1}
+  m_IndirectSpecularColor: {r: 0.10275107, g: 0.05814307, b: 0.029948262, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1200,7 +1200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 142751990}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4663,6 +4663,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 68a109eb0cddf5841ac9ea81ff780d38, type: 3}
   - {fileID: 8300000, guid: e58e6812977eba7468babdc25cee2a7c, type: 3}
   - {fileID: 8300000, guid: 90bc848b1313bd1428b640f81a9f4e2f, type: 3}
+  prefabSpawn: {fileID: 0}
 --- !u!4 &385360881
 Transform:
   m_ObjectHideFlags: 0
@@ -15751,7 +15752,7 @@ MonoBehaviour:
   m_UpdateType: 0
   m_IgnoreTrackingState: 0
   m_PositionInput:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Position
       m_Type: 0
@@ -15780,7 +15781,7 @@ MonoBehaviour:
     m_Reference: {fileID: 7862207684358717888, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_RotationInput:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Rotation
       m_Type: 0
@@ -15809,7 +15810,7 @@ MonoBehaviour:
     m_Reference: {fileID: -530380113134220495, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_TrackingStateInput:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Tracking State
       m_Type: 0
@@ -22991,7 +22992,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_HeadTransform: {fileID: 1156771114}
   m_LeftControllerTransform: {fileID: 193766724}
