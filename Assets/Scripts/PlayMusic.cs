@@ -57,7 +57,7 @@ public class PlayMusic : MonoBehaviour
             audioSource.Play();
         }
         
-        if(stateKey == "1-1-1-1-1")
+        if(stateKey == "1-1-0-1-0")
         {
              if(prefabSpawn != null)
             {

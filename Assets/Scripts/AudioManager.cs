@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -21,6 +22,11 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Update()
+    {
+        this.gameObject.transform.position = FindAnyObjectByType<XROrigin>().gameObject.transform.position;
     }
 
     public void PlayMusic(AudioClip musicClip, float volume = 1.0f)
