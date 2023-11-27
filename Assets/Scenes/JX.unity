@@ -8346,6 +8346,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 68a109eb0cddf5841ac9ea81ff780d38, type: 3}
   - {fileID: 8300000, guid: e58e6812977eba7468babdc25cee2a7c, type: 3}
   - {fileID: 8300000, guid: 90bc848b1313bd1428b640f81a9f4e2f, type: 3}
+  prefabSpawn: {fileID: 0}
 --- !u!4 &1241157264
 Transform:
   m_ObjectHideFlags: 0

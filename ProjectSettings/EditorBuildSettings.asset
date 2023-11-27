@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/DB-Demo.unity
     guid: fe998adae4431364c92f027bdcaa77e3
   - enabled: 1
-    path: Assets/Scenes/JZ.unity
+    path: Assets/Scenes/Level Selection.unity
     guid: 58318a6b6f956804a8de5e21f957d3f2
   - enabled: 1
-    path: Assets/Scenes/WC.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 5f74add32eb9b7c4997ecf03c730f943
   - enabled: 1
-    path: Assets/Scenes/Cave-1.unity
+    path: Assets/Scenes/Level 1_Cave-1.unity
     guid: baa2258731d448844b13c90a94bfa59d
   - enabled: 1
-    path: Assets/Scenes/Cave-2.unity
+    path: Assets/Scenes/Level 1_Cave-2.unity
     guid: aed73c06b56ca9845ae910e497ab49ea
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6edac664c3a86224c8d3305f5e557009,
