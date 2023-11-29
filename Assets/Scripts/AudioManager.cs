@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource musicSource;
     public AudioSource sfxSource;
+    public AudioSource musicEffect;
 
     private void Awake()
     {
@@ -40,6 +41,12 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.PlayOneShot(sfxClip, volume);
     }
+
+    public void PlayMusicEffect(AudioClip sfxClip, float volume = 1.0f)
+    {
+        musicEffect.PlayOneShot(sfxClip, volume);
+    }
+
 
     public void SetMusicVolume(float volume)
     {

@@ -38,7 +38,7 @@ public class PrefabSpawn : MonoBehaviour
         else
         {
             // Destroy the prefab after the specified duration
-            SceneManager.LoadSceneAsync("JZ");
+            SceneManager.LoadSceneAsync("Level Selection");
         }
     }
 }

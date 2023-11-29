@@ -9,14 +9,18 @@ public class PlayMusic : MonoBehaviour
     private List<bool> socketFilledStates; // List to keep track of whether sockets are filled
     public List<AudioClip> musicTracks; // List of music tracks to play based on the state
 
-    private AudioSource audioSource;
+    private AudioManager audioManager;
     public PrefabSpawn prefabSpawn;
+    private AudioClip currentClip;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = musicTracks[musicTracks.FindIndex(track => track.name == "0-0-0-0-0")];
-        audioSource.Play();
+        GameObject audioManagerObject = GameObject.FindWithTag("AudioManager");
+
+        if (audioManagerObject != null)
+        {
+            audioManager = audioManagerObject.GetComponent<AudioManager>();
+        }
         // Initialize the socketFilledStates list with all sockets initially unfilled
         socketFilledStates = new List<bool>(new bool[socketContainers.Count]);
     }
@@ -53,11 +57,11 @@ public class PlayMusic : MonoBehaviour
         // If a matching state is found, play the corresponding music
         if (index >= 0)
         {
-            audioSource.clip = musicTracks[index];
-            audioSource.Play();
+            currentClip = musicTracks[index];
+            audioManager.PlayMusicEffect(currentClip);
         }
         
-        if(stateKey == "1-1-0-1-0")
+        if(stateKey == "1-0-1-1-1")
         {
              if(prefabSpawn != null)
             {
