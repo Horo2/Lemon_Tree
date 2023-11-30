@@ -3169,6 +3169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Level 1
   level1Solution: {fileID: 0}
+  State: {fileID: 0}
 --- !u!1 &234861720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8a8ec310f66e8458f527b12318dd7d,
@@ -16635,7 +16636,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20227,6 +20228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Level3
   level1Solution: {fileID: 0}
+  State: {fileID: 0}
 --- !u!65 &1671974840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21822,6 +21824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Level2
   level1Solution: {fileID: 0}
+  State: {fileID: 0}
 --- !u!65 &1856955202
 BoxCollider:
   m_ObjectHideFlags: 0

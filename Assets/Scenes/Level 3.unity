@@ -1289,7 +1289,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3188,6 +3188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1480254786}
   sfxSource: {fileID: 2043423988}
+  musicEffect: {fileID: 0}
 --- !u!1001 &189344542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13312,7 +13313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &775901692
 MonoBehaviour:
   m_ObjectHideFlags: 0
