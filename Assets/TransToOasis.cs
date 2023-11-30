@@ -11,7 +11,7 @@ public class TransToOasis : MonoBehaviour
     void Update()
     {
         // 如果玩家在触发区域内且按下了F键
-        if (playerInTrigger && Input.GetKeyDown(KeyCode.Alpha1))
+        if (playerInTrigger &&Input.anyKey)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
