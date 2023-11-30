@@ -14,9 +14,10 @@ public class GameStateManager : MonoBehaviour
         // Add any other states you need
     }
 
+
     public static GameStateManager Instance;
     public GameState currentGameState;
-
+    public int currentGamePhase;
     private void Awake()
     {
         // Singleton pattern
@@ -59,5 +60,13 @@ public class GameStateManager : MonoBehaviour
                 break;
                 // Handle other states
         }
+    }
+    public void nextGamePhase()
+    {
+        currentGamePhase += 1;
+    }
+    public int phase()
+    {
+        return currentGamePhase;
     }
 }

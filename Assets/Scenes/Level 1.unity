@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10275107, g: 0.05814307, b: 0.029948262, a: 1}
+  m_IndirectSpecularColor: {r: 0.17242509, g: 0.094719864, b: 0.044216968, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2209,8 +2209,8 @@ Canvas:
   m_GameObject: {fileID: 465754092}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 20805603}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -4495,6 +4495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Level 1_Cave-1
   level1Solution: {fileID: 8300000, guid: 914a72e42733e094c8a6f7b72b8f152e, type: 3}
+  State: {fileID: 0}
 --- !u!65 &1119023527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5081,6 +5082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Cave-2
   level1Solution: {fileID: 0}
+  State: {fileID: 0}
 --- !u!1001 &1461905103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5496,6 +5498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Level 1_Cave-2
   level1Solution: {fileID: 0}
+  State: {fileID: 0}
 --- !u!65 &1503269056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7398,6 +7401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Cave-1
   level1Solution: {fileID: 0}
+  State: {fileID: 0}
 --- !u!1001 &2101032680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8405,10 +8409,30 @@ PrefabInstance:
       propertyPath: m_text
       value: New Text
       objectReference: {fileID: 0}
+    - target: {fileID: 77123638295756242, guid: 20fdb6e1810e1ed428e32a8a4f23a53e,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 77123638295756242, guid: 20fdb6e1810e1ed428e32a8a4f23a53e,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 739590518860602729, guid: 20fdb6e1810e1ed428e32a8a4f23a53e,
         type: 3}
       propertyPath: m_Name
       value: Dialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109818965216531927, guid: 20fdb6e1810e1ed428e32a8a4f23a53e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109818965216531927, guid: 20fdb6e1810e1ed428e32a8a4f23a53e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6096034798513725669, guid: 20fdb6e1810e1ed428e32a8a4f23a53e,
         type: 3}
