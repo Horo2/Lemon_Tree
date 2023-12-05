@@ -69,4 +69,8 @@ public class GameStateManager : MonoBehaviour
     {
         return currentGamePhase;
     }
+    public void nextPhase()
+    {
+        currentGamePhase += 1;
+    }
 }

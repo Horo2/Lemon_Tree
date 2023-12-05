@@ -65,6 +65,8 @@ public class PlayMusic : MonoBehaviour
         {
              if(prefabSpawn != null)
             {
+                GameObject gameObject = GameObject.Find("GameStateManager");
+                gameObject.GetComponent<GameStateManager>().nextPhase();
                 prefabSpawn.PrefabSpawnCode();
             }
         }

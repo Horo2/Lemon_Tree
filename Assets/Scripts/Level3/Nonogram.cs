@@ -69,6 +69,8 @@ public class Nonogram : MonoBehaviour
                 }
             }
         }
+        GameObject gameObject = GameObject.Find("GameStateManager");
+        gameObject.GetComponent<GameStateManager>().nextPhase();
         return true;
     }
 }

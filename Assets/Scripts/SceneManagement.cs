@@ -51,7 +51,8 @@ public class SceneManagement : MonoBehaviour
     void SwitchScene()
     {
         //家人们，准备传送咯
-        
+        GameObject gameObject = GameObject.Find("GameStateManager");
+        gameObject.GetComponent<GameStateManager>().nextPhase();
         SceneManager.LoadSceneAsync(name);
         if (name == "Level 1_Cave-1")
         {
