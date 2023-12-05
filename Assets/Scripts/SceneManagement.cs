@@ -17,7 +17,7 @@ public class SceneManagement : MonoBehaviour
     void Update()
     {
         // 如果玩家在触发区域内且按下了F键
-        if (playerInTrigger&&Input.anyKey)
+        if (playerInTrigger)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
@@ -51,8 +51,6 @@ public class SceneManagement : MonoBehaviour
     void SwitchScene()
     {
         //家人们，准备传送咯
-        GameObject gameObject = GameObject.Find("GameStateManager");
-        gameObject.GetComponent<GameStateManager>().nextPhase();
         SceneManager.LoadSceneAsync(name);
         if (name == "Level 1_Cave-1")
         {
