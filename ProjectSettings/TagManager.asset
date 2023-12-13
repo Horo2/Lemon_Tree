@@ -9,6 +9,7 @@ TagManager:
   - seed
   - water
   - light
+  - cell
   layers:
   - Default
   - TransparentFX

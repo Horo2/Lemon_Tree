@@ -11,6 +11,9 @@ public class Cell : MonoBehaviour
     private MeshRenderer meshRenderer;
     private XRSimpleInteractable interactable;
     private Transform originalPos;
+
+
+    
     public Action OnCellChanged { get; internal set; }
 
     void Awake()
@@ -28,6 +31,7 @@ public class Cell : MonoBehaviour
     private void Start()
     {
         originalPos = this.gameObject.transform;
+        
     }
 
     private void Update()
@@ -47,6 +51,8 @@ public class Cell : MonoBehaviour
         isLit = !isLit;
         meshRenderer.material = isLit ? litMaterial : unlitMaterial;
         OnCellChanged?.Invoke();
+        
+        
     }
 
     private void OnHoverExit(HoverExitEventArgs arg0)

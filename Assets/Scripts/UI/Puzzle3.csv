@@ -1,0 +1,11 @@
+Symbol,ID,Character,Location,Text,Jump to,Effect
+#,0,A,Left,Do you see those numbers in front of you?,1,
+#,1,B,Right,Please try to light up the grid at your feet.,2,
+End,2,,,,,
+#,3,,,"The warm feeling... is it related to the ""sun"" engraved on the monument?",4,
+End,5,,,,,
+#,6,A,Left,Sunlight is also indispensable for the growth of a seed,7,
+#,7,B,Right,"please bring ""sunlight"" to the seed.",8,
+End,8,,,,,
+#,9,A,Left,What is that on the left?,10,
+End,10,,,,,

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,9 @@ public class Nonogram : MonoBehaviour
     public int gridSize = 5; // Adjust grid size as needed
     public GameObject cellPrefab;
     public Transform gridParent;
+
+    public DialogSystem dialogSystem;
+
 
     private int[,] solution = new int[,] { //向左旋转90°
         {1, 1, 1, 1, 1},
@@ -22,6 +26,7 @@ public class Nonogram : MonoBehaviour
     void Start()
     {
         cells = new GameObject[gridSize, gridSize];
+        
 
 
         // Create grid of cells
@@ -39,6 +44,7 @@ public class Nonogram : MonoBehaviour
                 cellScript.OnCellChanged += CheckPuzzleCompletion;
             }
         }
+        dialogSystem.GetComponent<DialogSystem>().enabled = false;
     }
 
     void CheckPuzzleCompletion()
@@ -48,6 +54,8 @@ public class Nonogram : MonoBehaviour
         if (puzzleSolved)
         {
             Debug.Log("Puzzle Solved!");
+            dialogSystem.GetComponent<DialogSystem>().enabled = true;
+            dialogSystem.dialogIndex = 6;
             // Implement your logic for completing the puzzle
         }
     }
@@ -73,4 +81,6 @@ public class Nonogram : MonoBehaviour
         gameObject.GetComponent<GameStateManager>().nextPhase();
         return true;
     }
+
+
 }
