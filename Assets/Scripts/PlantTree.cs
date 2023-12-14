@@ -13,11 +13,25 @@ public class PlantTree : MonoBehaviour
     public GameObject water;
     public GameObject light;
 
+    public static PlantTree instance;
 
-    private bool hasSeed = false;
-    private bool hasWater = false;
-    private bool hasLight = false;
+    public bool hasSeed = false;
+    public bool hasWater = false;
+    public bool hasLight = false;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            // If an instance already exists, destroy this new instance
+            Destroy(gameObject);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("water") && hasSeed && !hasWater)

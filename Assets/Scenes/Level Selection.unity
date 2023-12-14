@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10284143, g: 0.058465444, b: 0.029755585, a: 1}
+  m_IndirectSpecularColor: {r: 0.10275107, g: 0.05814307, b: 0.029948262, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11747,8 +11747,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706928877}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.36, y: 1.9623606, z: 3.6173263}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.36, y: 1.9623604, z: 3.6173248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14106,17 +14106,17 @@ PrefabInstance:
     - target: {fileID: 7145475377531753037, guid: 0a59d1c37471b544abfc0c8173987a46,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.581
+      value: 25.580994
       objectReference: {fileID: 0}
     - target: {fileID: 7145475377531753037, guid: 0a59d1c37471b544abfc0c8173987a46,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.97
+      value: 1.9700003
       objectReference: {fileID: 0}
     - target: {fileID: 7145475377531753037, guid: 0a59d1c37471b544abfc0c8173987a46,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.8
+      value: 4.800003
       objectReference: {fileID: 0}
     - target: {fileID: 7145475377531753037, guid: 0a59d1c37471b544abfc0c8173987a46,
         type: 3}
@@ -15634,8 +15634,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141607061}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.22, y: 1.9623606, z: 3.6173263}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.220001, y: 1.9623604, z: 3.6173248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16547,7 +16547,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19672,6 +19672,9 @@ MonoBehaviour:
   seed: {fileID: 1748613920}
   water: {fileID: 1141607061}
   light: {fileID: 706928877}
+  hasSeed: 0
+  hasWater: 0
+  hasLight: 0
 --- !u!136 &1633888253
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21891,8 +21894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed07e5a2d7a3934e95c8cc2d879ecb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject1: {fileID: 1141607061}
-  gameObject2: {fileID: 1748613920}
+  gameObject1: {fileID: 1748613920}
+  gameObject2: {fileID: 1141607061}
   gameObject3: {fileID: 706928877}
 --- !u!4 &1875544421
 Transform:
@@ -23885,8 +23888,8 @@ SceneRoots:
   - {fileID: 1424652815}
   - {fileID: 1615525032}
   - {fileID: 1344379272}
-  - {fileID: 2029837614}
   - {fileID: 1141607067}
   - {fileID: 927519786}
   - {fileID: 706928881}
+  - {fileID: 2029837614}
   - {fileID: 1875544421}
