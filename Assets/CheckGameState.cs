@@ -8,6 +8,10 @@ public class CheckGameState : MonoBehaviour
     public GameObject gameObject1;
     public GameObject gameObject2;
     public GameObject gameObject3;
+
+    public GameObject[] afterLevel1;
+    public GameObject[] afterLevel3;
+    public Material afterLevel2;
     private PlantTree dirtPile;
 
     void Awake()
@@ -26,6 +30,13 @@ public class CheckGameState : MonoBehaviour
         if (i == 1)
         {
             gameObject1.SetActive(true);
+            foreach(GameObject gm in afterLevel1)
+            {
+                if (gm != null)
+                {
+                    gm.SetActive(false);
+                }
+            }
         }
         if(i == 2)
         {
@@ -34,6 +45,14 @@ public class CheckGameState : MonoBehaviour
                 gameObject1.SetActive(true);
             }
             gameObject2.SetActive(true);
+            foreach (GameObject gm in afterLevel1)
+            {
+                if (gm != null)
+                {
+                    gm.SetActive(false);
+                }
+            }
+            RenderSettings.skybox = afterLevel2;
         }
         if(i ==3)
         {
@@ -47,6 +66,21 @@ public class CheckGameState : MonoBehaviour
                 gameObject2.SetActive(true);
             }
             gameObject3.SetActive(true);
+            foreach (GameObject gm in afterLevel1)
+            {
+                if (gm != null)
+                {
+                    gm.SetActive(false);
+                }
+            }
+            RenderSettings.skybox = afterLevel2;
+            foreach (GameObject gm in afterLevel3)
+            {
+                if (gm != null)
+                {
+                    gm.SetActive(true);
+                }
+            }
         }
     }
     
