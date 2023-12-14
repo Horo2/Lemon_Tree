@@ -13,12 +13,14 @@ public class Nonogram : MonoBehaviour
     public DialogSystem dialogSystem;
 
 
-    private int[,] solution = new int[,] { //向左旋转90°
-        {1, 1, 1, 1, 1},
-        {1, 0, 0, 0, 0},
-        {1, 0, 0, 0, 0},
-        {1, 0, 0, 0, 0},
-        {1, 0, 0, 0, 0}
+    private int[,] solution = new int[,] { // 我也不知道向哪旋转：）
+        {1, 1, 1, 1, 0, 0, 1},
+        {1, 0, 0, 1, 0, 0, 1},
+        {1, 0, 0, 1, 1, 1, 1},
+        {0, 0, 0, 0, 0, 0, 0},
+        {1, 0, 0, 1, 1, 1, 1},
+        {1, 0, 0, 1, 0, 0, 1},
+        {1, 1, 1, 1, 0, 0, 1}
     }; // Replace this with your puzzle solution
 
     private GameObject[,] cells;
@@ -34,7 +36,7 @@ public class Nonogram : MonoBehaviour
         {
             for (int j = 0; j < gridSize; j++)
             {
-                GameObject cell = Instantiate(cellPrefab, new Vector3(i, 0, j), Quaternion.identity);
+                GameObject cell = Instantiate(cellPrefab, gridParent.position + new Vector3(i, -0.6f, j), Quaternion.identity);
                 cell.transform.SetParent(gridParent);
                 cells[i, j] = cell;
 
@@ -63,6 +65,16 @@ public class Nonogram : MonoBehaviour
     // Function to check if the puzzle is solved
     bool IsPuzzleSolved()
     {
+        int[,] current = new int[,] { //向左旋转90°
+        { 1, 0, 0, 1, 1, 1, 1},
+        {1, 0, 0, 1, 0, 0, 1},
+        {1, 1, 1, 1, 0, 0, 1},
+        {0, 0, 0, 0, 0, 0, 0},
+        {1, 1, 1, 1, 0, 0, 1},
+        {1, 0, 0, 1, 0, 0, 1},
+        {1, 0, 0, 1, 1, 1, 1}
+        };
+
         for (int i = 0; i < gridSize; i++)
         {
             for (int j = 0; j < gridSize; j++)
@@ -70,6 +82,15 @@ public class Nonogram : MonoBehaviour
                 Cell currentCell = cells[i, j].GetComponent<Cell>();
                 int solutionValue = solution[i, j];
 
+                if (currentCell.isLit)
+                {
+                    current[i, j] = 1;
+                }
+                else
+                {
+                    current[i, j] = 0;
+                }
+                
                 // Compare the integer solution value with the IsLit boolean property
                 if ((solutionValue == 1 && !currentCell.isLit) || (solutionValue == 0 && currentCell.isLit))
                 {
@@ -77,6 +98,19 @@ public class Nonogram : MonoBehaviour
                 }
             }
         }
+        //int rows = 7;
+        //int columns = 7;
+        //Debug.Log("start");
+        //// Printing the array
+        //for (int a = 0; a < rows; a++)
+        //{
+        //    for (int k = 0; k < columns; k++)
+        //    {
+        //        Debug.Log(current[a, k] + " ");
+        //    }
+        //    Debug.Log("-----------------------");
+        //}
+        //return false;
         GameObject gameObject = GameObject.Find("GameStateManager");
         gameObject.GetComponent<GameStateManager>().nextPhase();
         return true;
