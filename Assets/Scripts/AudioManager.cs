@@ -44,7 +44,12 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusicEffect(AudioClip sfxClip, float volume = 1.0f)
     {
-        musicEffect.PlayOneShot(sfxClip, volume);
+        musicEffect.clip = sfxClip;
+        musicEffect.Play();
+        if (musicEffect.time > 20)
+        {
+            musicEffect.Stop();
+        }
     }
 
 

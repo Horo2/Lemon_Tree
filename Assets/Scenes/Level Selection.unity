@@ -21805,7 +21805,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25393,7 +25393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc92206cfbaea84c96a6e36fb8bd9db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Level3
+  name: Level 3
   level1Solution: {fileID: 0}
   State: {fileID: 0}
 --- !u!65 &1671974840

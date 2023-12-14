@@ -1,5 +1,5 @@
 Symbol,ID,Character,Location,Text,Jump to,Effect
-#,0,A,Left,Go to the Right Cave,1,
+#,0,A,Left,"The left cave is question, the right cave is answer",1,
 #,1,A,Left,It is an era where vegetation is scarce,2,
 #,2,B,Right,where once lush lands are transformed into endless barrens,3,
 #,3,A,Left,where the world is shrouded in eternal night,4,

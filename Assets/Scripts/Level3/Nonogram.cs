@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Nonogram : MonoBehaviour
@@ -59,6 +60,7 @@ public class Nonogram : MonoBehaviour
             dialogSystem.GetComponent<DialogSystem>().enabled = true;
             dialogSystem.dialogIndex = 6;
             // Implement your logic for completing the puzzle
+            SceneManager.LoadSceneAsync("Level Selection");
         }
     }
 
